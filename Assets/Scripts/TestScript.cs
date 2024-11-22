@@ -11,7 +11,10 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LevelManager.lm.score++;
-        print("Score=" + LevelManager.lm.score);
+        if (LevelManager.lm != null)
+        {
+            LevelManager.lm.score++;
+            //print("Score=" + LevelManager.lm.score);
+        }
     }
 }
